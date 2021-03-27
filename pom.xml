@@ -11,6 +11,7 @@
     <modules>
       <module>design-pattern</module>
       <module>thread</module>
+        <module>idea-skill</module>
     </modules>
 
     <name>java-basics</name>
