@@ -5,18 +5,10 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.hz</groupId>
-  <artifactId>java-basics</artifactId>
-    <packaging>pom</packaging>
-    <version>1.0-SNAPSHOT</version>
-    <modules>
-      <module>design-pattern</module>
-      <module>juc</module>
-      <module>idea-skill</module>
-      <module>nio</module>
-      <module>niukewang</module>
-    </modules>
+  <artifactId>nio</artifactId>
+  <version>1.0-SNAPSHOT</version>
 
-    <name>java-basics</name>
+  <name>nio</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
 
@@ -31,18 +23,7 @@
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <version>4.11</version>
-      <scope>test</scope>
-    </dependency>
-
-    <dependency>
-      <groupId>org.springframework.kafka</groupId>
-      <artifactId>spring-kafka</artifactId>
-      <version>1.1.1.RELEASE</version>
-    </dependency>
-    <dependency>
-      <groupId>org.apache.kafka</groupId>
-      <artifactId>kafka_2.10</artifactId>
-      <version>0.10.0.1</version>
+<!--      <scope>test</scope>-->
     </dependency>
   </dependencies>
 

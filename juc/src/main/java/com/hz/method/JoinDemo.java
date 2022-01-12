@@ -1,5 +1,7 @@
 package com.hz.method;
 
+import java.util.concurrent.TimeUnit;
+
 /**
  * @Author HuZhuang
  * @Date 2021-04-04 23:11
@@ -10,15 +12,22 @@ public class JoinDemo {
         Thread thread = new Thread(() -> {
             for (int i = 0; i < 10; i++) {
                 System.out.println(i);
+                try {
+                    TimeUnit.SECONDS.sleep(1L);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
             }
         }, "子线程");
         thread.start();
 
         //主线程
-        thread.join();
         for (int i = 0; i < 5; i++) {
                 //i为200时调用thread.join(),则当前线程阻塞,一直等待thread线程执行完毕后才继续执行
             System.out.println("main" + i);
+            if (i == 2) {
+                thread.join();
+            }
         }
     }
 }
