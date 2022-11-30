@@ -12,6 +12,7 @@
       <module>design-pattern</module>
       <module>thread</module>
         <module>idea-skill</module>
+        <module>leetcode</module>
     </modules>
 
     <name>java-basics</name>
@@ -70,10 +71,6 @@
         <plugin>
           <artifactId>maven-site-plugin</artifactId>
           <version>3.7.1</version>
-        </plugin>
-        <plugin>
-          <artifactId>maven-project-info-reports-plugin</artifactId>
-          <version>3.0.0</version>
         </plugin>
       </plugins>
     </pluginManagement>
